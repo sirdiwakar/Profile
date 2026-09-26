@@ -348,7 +348,7 @@ export default function Home() {
           <a className="wordmark" href="#home">
             ADARSH DIWAKAR<span>ENGINEER / BUILDER</span>
           </a>
-          <a href="mailto:adarsh2218diwakar@gmail.com" className="availability">
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=adarsh2218diwakar@gmail.com" className="availability">
             <i /> Let’s build something <ArrowUpRight size={16} />
           </a>
         </header>
@@ -428,16 +428,22 @@ export default function Home() {
         <div className="skill-ribbon" aria-label="Primary technologies">
           <div>
             {[
-              "Python",
-              "FastAPI",
+              "Java",
+              "Spring Boot",
+              "Hibernate ORM",
+              "Flyway",
+              "AWS",
               "React",
               "PostgreSQL",
               "Redis",
               "Kafka",
               "Docker",
               "Kubernetes",
-              "Python",
-              "FastAPI",
+              "Java",
+              "Spring Boot",
+              "Hibernate ORM",
+              "Flyway",
+              "AWS",
               "React",
               "PostgreSQL",
               "Redis",
@@ -789,12 +795,12 @@ export default function Home() {
             </p>
             <a
               className="primary-btn"
-              href="mailto:adarsh2218diwakar@gmail.com"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=adarsh2218diwakar@gmail.com"
             >
               Let’s talk <ArrowUpRight size={20} />
             </a>
           </div>
-          <a className="email-link" href="mailto:adarsh2218diwakar@gmail.com">
+          <a className="email-link" href="https://mail.google.com/mail/?view=cm&fs=1&to=adarsh2218diwakar@gmail.com">
             adarsh2218diwakar@gmail.com <ArrowUpRight size={20} />
           </a>
           <footer>
