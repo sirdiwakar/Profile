@@ -518,10 +518,14 @@ export default function Home() {
                 </span>
               </div>
               <div className="tags">
-                <span>Python</span>
-                <span>FastAPI</span>
-                <span>Redis Streams</span>
+                <span>Java</span>
+                <span>Spring Boot</span>
+                <span>Redis</span>
                 <span>PostgreSQL</span>
+                <span>Spring Security</span>
+                <span>Hibernate ORM</span>
+                <span>Flyway</span>
+                <span>Docker</span>
               </div>
             </div>
             <span className="job-index">01</span>
@@ -551,6 +555,9 @@ export default function Home() {
                 <span>Kafka</span>
                 <span>MySQL</span>
                 <span>Redis</span>
+                <span>Docker</span>
+                <span>Hibernate ORM</span>
+                <span>Flyway</span>
               </div>
             </div>
             <span className="job-index">02</span>
