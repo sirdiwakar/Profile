@@ -27,6 +27,7 @@ const links = {
   github: "https://github.com/sirdiwakar",
   linkedin: "https://www.linkedin.com/in/adarsh-diwakar-919b791b9/",
   food: "https://food-delivery-frontend-qful.onrender.com/",
+  multiVendor: "https://github.com/sirdiwakar/MultiVendor_Ecommerce",
 };
 function Reaction({ beep }: { beep: () => void }) {
   const [phase, setPhase] = useState("idle");
@@ -208,18 +209,18 @@ export default function Home() {
   useEffect(() => {
     try {
       setTheme(localStorage.getItem("adarsh-theme") || "dark");
-    } catch {}
+    } catch { }
   }, []);
   useEffect(() => {
     const m = window.matchMedia("(prefers-color-scheme: dark)");
     const apply = () =>
-      (document.documentElement.dataset.theme =
-        theme === "system" ? (m.matches ? "dark" : "light") : theme);
+    (document.documentElement.dataset.theme =
+      theme === "system" ? (m.matches ? "dark" : "light") : theme);
     apply();
     m.addEventListener("change", apply);
     try {
       localStorage.setItem("adarsh-theme", theme);
-    } catch {}
+    } catch { }
     return () => m.removeEventListener("change", apply);
   }, [theme]);
   useEffect(() => {
@@ -277,7 +278,7 @@ export default function Home() {
       );
       o.start();
       o.stop(audio.current.currentTime + 0.13);
-    } catch {}
+    } catch { }
   }
   return (
     <SidebarProvider>
@@ -348,7 +349,7 @@ export default function Home() {
           <a className="wordmark" href="#home">
             ADARSH DIWAKAR<span>ENGINEER / BUILDER</span>
           </a>
-          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=adarsh2218diwakar@gmail.com" className="availability">
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=adarsh2218diwakar@gmail.com" className="availability" target="_blank" rel="noopener noreferrer">
             <i /> Let’s build something <ArrowUpRight size={16} />
           </a>
         </header>
@@ -639,7 +640,7 @@ export default function Home() {
               </div>
             </a>
             <a
-              href={links.github}
+              href={links.multiVendor}
               target="_blank"
               rel="noreferrer"
               className="project-card reveal"
@@ -796,11 +797,13 @@ export default function Home() {
             <a
               className="primary-btn"
               href="https://mail.google.com/mail/?view=cm&fs=1&to=adarsh2218diwakar@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Let’s talk <ArrowUpRight size={20} />
             </a>
           </div>
-          <a className="email-link" href="https://mail.google.com/mail/?view=cm&fs=1&to=adarsh2218diwakar@gmail.com">
+          <a className="email-link" href="https://mail.google.com/mail/?view=cm&fs=1&to=adarsh2218diwakar@gmail.com" target="_blank" rel="noopener noreferrer">
             adarsh2218diwakar@gmail.com <ArrowUpRight size={20} />
           </a>
           <footer>
